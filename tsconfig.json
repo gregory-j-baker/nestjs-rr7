@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "include": [
+    "./.react-router/types/**/*",
+    "./app/**/*",
+    "./server/**/*",
+    "./react-router.config.ts",
+    "./vite.config.ts"
+  ],
+  "exclude": ["./build/**/*", "./node_modules/**/*"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "composite": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "noUncheckedIndexedAccess": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "noEmit": true,
+    "paths": {
+      "~app/*": ["./app/*"],
+      "~server/*": ["./server/*"]
+    },
+    "resolveJsonModule": true,
+    "rootDirs": ["./", "./.react-router/types"],
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "ES2022",
+    "tsBuildInfoFile": "./node_modules/.tsbuildinfo",
+    "types": ["@react-router/node", "node", "vite/client"],
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "verbatimModuleSyntax": true
+  }
+}

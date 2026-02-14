@@ -1,0 +1,61 @@
+{
+  "name": "nextjs-rr7",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "react-router build",
+    "dev": "cross-env NODE_ENV=development tsx watch server/app.bootstrap.ts",
+    "start": "cross-env NODE_ENV=production tsx server/app.bootstrap.ts",
+    "typecheck": "react-router typegen && tsc"
+  },
+  "dependencies": {
+    "@nestjs/axios": "^4.0.1",
+    "@nestjs/cache-manager": "^3.0.1",
+    "@nestjs/common": "^11.1.13",
+    "@nestjs/config": "^4.0.3",
+    "@nestjs/core": "^11.1.13",
+    "@nestjs/platform-express": "^11.1.13",
+    "@nestjs/terminus": "^11.0.0",
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/auto-instrumentations-node": "^0.69.0",
+    "@opentelemetry/exporter-metrics-otlp-proto": "^0.212.0",
+    "@opentelemetry/exporter-trace-otlp-proto": "^0.212.0",
+    "@opentelemetry/resources": "^2.5.1",
+    "@opentelemetry/sdk-metrics": "^2.5.1",
+    "@opentelemetry/sdk-node": "^0.212.0",
+    "@opentelemetry/semantic-conventions": "^1.39.0",
+    "@react-router/express": "^7.13.0",
+    "@react-router/node": "7.13.0",
+    "axios": "^1.13.5",
+    "cache-manager": "^7.2.4",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.3",
+    "express": "^4.22.1",
+    "isbot": "^5.1.31",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "react-router": "7.13.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.2"
+  },
+  "devDependencies": {
+    "@react-router/dev": "7.13.0",
+    "@tailwindcss/vite": "^4.1.13",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "cross-env": "^10.1.0",
+    "tailwindcss": "^4.1.13",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.2",
+    "vite": "^7.1.7",
+    "vite-tsconfig-paths": "^5.1.4"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "printWidth": 120,
+    "tabWidth": 2
+  }
+}
